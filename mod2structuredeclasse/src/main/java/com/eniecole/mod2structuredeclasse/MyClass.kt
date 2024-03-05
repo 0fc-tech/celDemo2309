@@ -8,7 +8,7 @@ data class Travail(
 )
 
 fun main() {
-    val developpeurNantais = Travail("Développeur", 34000,true,"Nantes")
+    val developpeurNantais = Travail(intitulePoste = "Développeur", 34000,true,"Nantes")
     val designerTeleTravail = Travail("Designer", 44000,true,null)
     val dirigeantESN = Travail("PDG",74000,true,"Paris")
     val developpeurRennais = developpeurNantais.copy(
