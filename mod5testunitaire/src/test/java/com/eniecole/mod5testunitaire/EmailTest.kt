@@ -12,3 +12,10 @@ class EmailTest {
         assertEquals(emailCheck("tonystark@hotmail.com"), true)
     }
 }
+
+fun fetchUsernameByID(id : Long?) = when (id){
+    null -> "Introuvable"
+    in Int.MIN_VALUE .. 0 -> "Impossible"
+    in 0..1000 -> "John Doe"
+    else -> "Tony Stark"
+}
